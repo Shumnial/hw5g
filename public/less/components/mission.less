@@ -1,0 +1,84 @@
+.mission{
+	margin-bottom: 120px;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.mission-top {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 40px;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+
+	&__poster {
+		position: relative;
+		width: 38.67%;
+	}
+
+	&__column {
+		width: 60%;
+		padding: 50px;
+	}
+
+	&__title {
+		font-size: 24px;
+		color: @red;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		color: @gray;
+	}
+
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__poster {
+			width: auto;
+		}
+
+		&__column {
+			width: 100%;
+		}
+	}
+}
+
+.mission-down {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+
+	&__item {
+		flex-basis: 30%;
+	}
+
+	&__poster {
+		position: relative;
+	}
+
+	&__img {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: @screen-sm) {
+		flex-direction: column;
+		align-items: center;
+
+		&__item {
+			flex-basis: auto;
+			width: 50%;
+			margin-bottom: 30px;
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+}

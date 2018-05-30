@@ -1,0 +1,40 @@
+.nav{
+	display: flex;
+	flex-basis: 67%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__link {
+		position: relative;
+		display: flex;
+		padding: 25px 0;
+
+		&:hover {
+			color: @red;
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 2px;
+				bottom: 0;
+				background-color: @red;
+			}
+		}
+	}
+
+	@media (max-width: @screen-md) {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		background-color: #fff;
+		padding: 0 15px;
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+	}
+
+	@media (max-width: @screen-sm) {
+		flex-direction: column;
+	}
+}

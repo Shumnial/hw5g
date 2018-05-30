@@ -1,0 +1,248 @@
+{
+	"title": "Заголовок страницы",
+	"mission": [
+		{
+			"url": "erix-xu",
+			"title": "Эрик Сюй о технологии 5G в 2014 году"
+		},
+		{
+			"url": "industry-voice",
+			"title": "Голос индустрии от специалистов Huawei"
+		},
+		{
+			"url": "dr-tong",
+			"title": "Видение о технологии 5G от доктора Тонга"
+		}
+	],
+	"innovations": [
+		{
+			"src": "innovation1.png",
+			"title": "Технические инновации",
+			"text": "5G&nbsp;будет иметь следующие существенные характеристики: пиковая скорость 10&nbsp;Гбит&nbsp;/ с, сверхнизкая латентность 1&nbsp;мс, 100 млрд соединений. Эти характеристики требуют более широкого спектра&nbsp;и, что более важно, революционных инноваций в&nbsp;технологиях эфирного интерфейса и&nbsp;сетевой архитектуры."
+		},
+		{
+			"src": "innovation2.png",
+			"title": "Сотрудничество с&nbsp;операторами",
+			"text": "За&nbsp;последние десятилетия Huawei установила тесное партнерство с&nbsp;ведущими мировыми операторами в&nbsp;области технических инноваций. На&nbsp;этих ранних этапах инноваций 5G&nbsp;их&nbsp;взаимные доверие и&nbsp;уверенность снова приносят Huawei этим ведущим мобильным операторам вместе, чтобы исследовать возможности&nbsp;5G."
+		},
+		{
+			"src": "innovation3.png",
+			"title": "Основные этапы 5G&nbsp;компании Huawei",
+			"text": "Huawei инициировал исследовательский проект 5G&nbsp;в&nbsp;2009&nbsp;году. В&nbsp;последующие годы команда 5G&nbsp;Huawei постоянно вносила свои захватывающие достижения в&nbsp;развитие индустрии&nbsp;5G, включая идентификацию будущих потребностей, самые первые полевые испытания технологий эфирного интерфейса и&nbsp;т.д."
+		}
+	],
+	"contribution": [
+		{
+			"year": "2015",
+			"src": "contribution1.jpg",
+			"title": "Самый большой вклад в&nbsp;развитие&nbsp;5G",
+			"descr": "Всемирный саммит LTE Амстердам, Нидерланды, 2015.06"
+		},
+		{
+			"year": "2016",
+			"src": "contribution2.jpg",
+			"title": "Отличный вклад в&nbsp;инновации&nbsp;5G",
+			"descr": "Всемирный саммит 5G Лондон, Великобритания, 2016.06"
+		},
+		{
+			"year": "2017",
+			"src": "contribution3.jpg",
+			"title": "Выдающийся вклад в&nbsp;эволюцию LTE до&nbsp;5G",
+			"descr": "MWC 2017 Барселона, Испания, 2017.02"
+		}
+	],
+	"news": [
+		{
+			"items": [
+				{
+					"img": "news1.jpg",
+					"date": "26 февраля 2018",
+					"title": "Huawei запускает полный комплекс решений для конечных продуктов&nbsp;5G."
+				},
+				{
+					"img": "news2.jpg",
+					"date": "28 февраля 2018",
+					"title": "China Mobile и&nbsp;Huawei демонстрируют первую в&nbsp;мире основную сеть 5G&nbsp;на&nbsp;базе микросервисов."
+				}
+			]
+		},
+		{
+			"items": [
+				{
+					"date": "2 марта 2018",
+					"title": "Huawei выпускает полный спектр полнофункциональных решений для беспроводных продуктов 5G&nbsp;на&nbsp;MWC 2018..."
+				},
+				{
+					"date": "23 февраля 2018",
+					"title": "Huawei и&nbsp;BT&nbsp;Group расширяют стратегическое партнерство, чтобы сосредоточиться на&nbsp;британском лидерстве 5G..."
+				},
+				{
+					"date": "27 февраля 2018",
+					"title": "Глобальные межотраслевые игроки открыли Ассоциацию по&nbsp;склеиванию&nbsp;5G."
+				}
+			]
+		}
+	],
+	"features": [
+		{
+			"col": "left",
+			"items": [
+				{
+					"textBold": "4-х кратная",
+					"text": "Возможность текущей сети&nbsp;4G"
+				},
+				{
+					"textBold": "10&nbsp;Гбит/с",
+					"text": "Пиковая скорость передачи"
+				},
+				{
+					"textBold": "1&nbsp;мс",
+					"text": "Сквозной период ожидания"
+				}
+			]
+		},
+		{
+			"col": "right",
+			"items": [
+				{
+					"textBold": "1/50",
+					"text": "Лучший период ожидания сети&nbsp;4G"
+				},
+				{
+					"textBold": "1&nbsp;млн/км2",
+					"text": "Количество подключений"
+				},
+				{
+					"textBold": "в&nbsp;100 раз",
+					"text": "Больше скорость от&nbsp;текущей сети&nbsp;4G"
+				}
+			]
+		}
+	],
+	"download": [
+		{
+			"url": "#",
+			"name": "Сетевая нарезка 5G&nbsp;для вертикальной промышленности"
+		},
+		{
+			"url": "#",
+			"name": "Forbes Insights-5G, Мобильная индустриальная революция"
+		},
+		{
+			"url": "#",
+			"name": "5G&nbsp;Открытие новых возможностей для бизнеса"
+		},
+		{
+			"url": "#",
+			"name": "5G&nbsp;Безопасность"
+		}
+	],
+	"abilities": [
+		{
+			"id": "fbb9b758-ede0-45df-91e5-cb2b40167800",
+			"name": "Виртуальная и&nbsp;дополненная реальность в&nbsp;облаке",
+			"title": "Lorem",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cupiditate iste optio sit dicta repellat, aliquid saepe tenetur doloremque atque animi odio dolores sed ipsam nam, alias porro fugit impedit.",
+			"active": "true"
+		},
+		{
+			"id": "03943a0d-f6ca-416d-9c1e-c335124d07b8",
+			"name": "Взаимосвязь автомобилей",
+			"title": "Виртуальные сети между автомобилями",
+			"text": "Huawei предоставила беспроводное решение&nbsp;5G, обеспечившее подключение &laquo;умного&raquo; концепт-кара компании SAIC Motor&nbsp;&mdash; iGS, а&nbsp;компания China Mobile обеспечила услуги связи. В&nbsp;рамках испытания водитель находился более чем в&nbsp;30&nbsp;километрах от&nbsp;автомобиля. Несколько камер с&nbsp;высоким разрешением, установленных в&nbsp;автомобиле, отправляли водителю видеосигналы в&nbsp;качестве&nbsp;HD в&nbsp;режиме реального времени, тем самым предоставляя ему 240-градусную панораму обзора, передаваемую по&nbsp;сети 5G&nbsp;с&nbsp;высокой пропускной способностью. Такой обзор превосходит поле зрение человека, которое в&nbsp;среднем составляет около 180-190&nbsp;градусов. Команды управления также передавались на&nbsp;рулевое колесо, педаль газа и&nbsp;тормоза, а&nbsp;сеть 5G&nbsp;обеспечила сверхмалую задержку, необходимую для мгновенной реакции в&nbsp;различных дорожных ситуациях. Водителю удалось постоянно сохранять полный контроль над автомобилем, хотя тот находился на&nbsp;значительном расстоянии от&nbsp;него."
+		},
+		{
+			"id": "2cc43426-19dd-4967-b1a3-c5ca7b9cdcd2",
+			"name": "Умное производство",
+			"title": "123",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic illum, consequuntur impedit quaerat. Minima laboriosam aspernatur, nemo veritatis consectetur laudantium nam nihil. Enim non, saepe natus quis quam voluptas."
+		},
+		{
+			"id": "6d45ed06-2972-4dfe-a4fc-5a7bd1f0a067",
+			"name": "Связанная энергия",
+			"title": "A",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia expedita quam rerum nam accusantium, natus id a reprehenderit voluptatibus, ut. Praesentium dignissimos aperiam rerum incidunt, impedit minima, aspernatur earum hic!"
+		},
+		{
+			"id": "b240d920-6540-4c82-85d9-618acd0669f2",
+			"name": "Беспроводное электронное здравоохранение",
+			"title": "213",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum suscipit voluptate quia expedita quasi. Dolor aspernatur consequatur, laudantium earum tenetur unde, quos reiciendis dicta ratione minus, alias, voluptatum corporis cupiditate."
+		},
+		{
+			"id": "7aab9cc3-e7db-4a38-87e6-c3338f3ca8e0",
+			"name": "Беспроводные домашние развлечения",
+			"title": "3212",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi magnam vel, fugiat ipsa, impedit asperiores tempora? Tenetur, doloribus! Quisquam officiis dicta laborum quibusdam minima modi autem expedita sit quasi!"
+		},
+		{
+			"id": "5acbed1b-836d-4c54-8309-96632861302b",
+			"name": "Подключенные дроны",
+			"title": "5342",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quo ipsa accusantium? A mollitia temporibus, illum placeat, sapiente culpa. Ipsum sunt, nihil quia! Dolorum tempore ipsa, dolorem facere. Itaque, error."
+		},
+		{
+			"id": "eb936f78-8527-4fb9-bcd3-60201a3b1445",
+			"name": "Социальные сети",
+			"title": "ЫВыф",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquid repellat quod temporibus rerum fuga et, quasi iusto ullam aut, voluptatem nisi id. Asperiores amet, ea quibusdam alias dolore, placeat!"
+		},
+		{
+			"id": "a27de1ac-db34-476d-a4c5-44d30612b356",
+			"name": "Персональный помощник&nbsp;AI",
+			"title": "3211",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A officiis minus quam iste deleniti quisquam modi ut reiciendis mollitia tenetur! Sunt magni perferendis, culpa. Illo labore enim deserunt eius, similique?"
+		},
+		{
+			"id": "ec25e45b-7c2a-459c-bcb5-4a5e78e74774",
+			"name": "Умный город",
+			"title": "323sadas",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos iure incidunt, tempora praesentium explicabo, reprehenderit natus modi quae velit officia, eius itaque voluptatibus inventore nihil. Distinctio, sit, eaque. Laborum, ad!"
+		}
+	],
+	"slider": [
+		"cmcc",
+		"network-slice",
+		"england",
+		"industry-voice",
+		"dr-tong",
+		"total-telecom",
+		"future-today",
+		"ken-hu",
+		"erix-xu",
+		"ntt-docomo",
+		"vodafone",
+		"field-trial",
+		"joint-test"
+	],
+	"social": [
+		{
+			"url": "http://www.facebook.com/Huawei",
+			"img": "facebook.png"
+		},
+		{
+			"url": "http://www.twitter.com/Huawei",
+			"img": "twitter.png"
+		},
+		{
+			"url": "http://www.linkedin.com/company/huawei",
+			"img": "linkedin.png"
+		},
+		{
+			"url": "http://www.youtube.com/Huawei",
+			"img": "youtube.png"
+		},
+		{
+			"url": "http://www.google.com/+Huawei",
+			"img": "gplus.png"
+		},
+		{
+			"url": "http://weibo.com/huaweiweibo",
+			"img": "weibo.png"
+		},
+		{
+			"url": "qrcode",
+			"img": "qrcode.png"
+		}
+	]
+}

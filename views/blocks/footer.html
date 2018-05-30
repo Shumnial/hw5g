@@ -1,0 +1,15 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<p class="footer__copyright">Copyright &copy;&nbsp;2015 Huawei Technologies Co., Ltd. All rights reserved.</p>
+			<div class="footer__social social">
+				<p class="social__caption">Follow Huawei:</p>
+				{% for item in common.data.social %}
+				<a class="social__link" href="{{ item.url }}">
+					<img src="{{ item.img|img_asset}}">
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</footer>
