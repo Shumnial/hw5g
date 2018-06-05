@@ -82,6 +82,7 @@ const filters = {
 	asset: path => getAssetPath(path),
 	img_asset: path => getAssetPath(path, 'images/'),
 	video_asset: path => getAssetPath(path, 'videos/'),
+	materials_asset: path => getAssetPath(path, 'materials/'),
 	uploads: path => getAssetPath(path, 'uploads/'),
 	js_asset: path => getAssetPath(path, 'javascripts/'),
 	css_asset: path => getAssetPath(path, 'stylesheets/'),

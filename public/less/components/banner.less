@@ -1,14 +1,22 @@
 .banner{
 	min-height: 310px;
-	background-image: url('../images/banner-bg.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	padding-top: 80px;
 	margin-bottom: 120px;
+	display: flex;
+	justify-content: space-between;
 
 	&__title {
 		color: #0c489d;
 		max-width: 370px;
+	}
+
+	@media (max-width: 600px) {
+		&__img {
+			display: none;
+		}
+	}
+
+	@media (max-width: @screen-xs) {
+		margin-bottom: 120px;
 	}
 }

@@ -1,42 +1,57 @@
 {% extends layout %} {% block head_section %} {#- Include something in
 <head /> -#} {% endblock head_section %} {% block content %}
-<section class="banner">
-  <div class="container">
-    <h1 class="banner__title title">
-  		5G. Путь к миру без границ
-  	</h1>
-  </div>
-</section>
 <div class="container">
-  <section class="news" id="news">
+  <section class="banner">
+      <h1 class="banner__title title">
+    		5G. Путь к миру<br>без границ
+    	</h1>
+      <div class="banner__img">
+        <img src="{{ 'banner.png'|img_asset }}">
+      </div>
+  </section>
+</div>
+<div class="container">
+  <section class="news">
     <div class="headings">
-      <h2 class="title">Новости</h2>
+      <h2 class="title" id="news">Новости</h2>
     </div>
     {% for rows in common.data.news %}
-    <div class="news__row">
+    {% if loop.index === 1 %}
+      <div class="news__row">
       {% for item in rows.items %}
-      <a href="#" class="news__item">
-				{% if item.img %}
-				<div class="news__img">
-					<img src="{{ item.img|img_asset }}" alt="">
-				</div>
-				{% endif %}
-        <p>{{ item.date }}</p>
-        <p>{{ item.title }}</p>
-      </a> {% endfor %}
+      <a href="{{ item.url }}" class="news__item news__item--w-50">
+        {% if item.img %}
+        <div class="news__img">
+          <img src="{{ item.img|img_asset }}" alt="">
+        </div>
+        {% endif %}
+        <p class="item__date">{{ item.date }}</p>
+        <p class="item__text">{{ item.title }}</p>
+      </a> 
+      {% endfor %}
     </div>
+    {% else %}
+    <div class="slider">
+          {% for item in rows.items %}
+          <a href="{{ item.url }}" class="news__item news__item--w-30 slider__slide">
+            <p>{{ item.date }}</p>
+            <p>{{ item.title }}</p>
+          </a> 
+          {% endfor %}
+        </div>
+    {% endif %}
     {% endfor %}
   </section>
 </div>
-<section class="new-era" id="new-era">
+<section class="new-era">
   <div class="container">
     <div class="headings">
-      <h2 class="title">Новая эра «5G»</h2>
-      <p class="text">Услуги передачи данных появились в эпоху 2G, выросли в эпоху 3G и диверсифицировались в эпоху 4G. 5G, показывая превосходный пользовательский интерфейс и гораздо больше возможностей, готов вступить в новую эру мобильной связи
+      <h2 class="title" id="new-era">Новая эра 5G</h2>
+      <p class="text">Услуги передачи данных появились в&nbsp;эпоху&nbsp;2G, развивались в&nbsp;эпоху&nbsp;3G, а&nbsp;в&nbsp;эпоху 4G&nbsp;их&nbsp;число многократно увеличилось. 5G, стандарт с&nbsp;гораздо большим потенциалом, уже готов возвестить о&nbsp;наступлении новой эры мобильной связи.
       </p>
     </div>
     <div class="new-era__about about-era">
-      <h3 class="about-era__title">5G соединит все и принесет пользу всем слоям общества</h3>
+      <h3 class="about-era__title">5G&nbsp;объединит всё и&nbsp;принесет пользу всем слоям общества</h3>
       <div class="about-era__row">
         <div class="about-era__col">
           <div class="about-era__poster play" data-video="{{ 'opportunities.mp4'|video_asset }}">
@@ -46,10 +61,10 @@
         </div>
         <div class="about-era__col">
           <p class="new-era__text text text--color-gray">
-            5G&nbsp;объединит большие данные, облачные вычисления, искусственный интеллект и&nbsp;многие другие инновационные технологии, чтобы ускорить наступление золотого века информации в&nbsp;течение следующих 10&nbsp;лет.
+            Стандарт 5G&nbsp;совместит большие данные, облачные вычисления, искусственный интеллект и&nbsp;другие инновационные технологии, чтобы золотой век информации начался в&nbsp;течение ближайших 10&nbsp;лет.
           </p>
           <p class="new-era__text text text--color-gray">
-            Технология 5G&nbsp;позволит гибким, надежным и&nbsp;безопасным беспроводным сетям подключать людей ко&nbsp;всем приложениям, услугам и&nbsp;вещам, тем самым приводя человечество в&nbsp;эпоху &laquo;всего на&nbsp;мобильном телефоне&raquo;.
+            С&nbsp;технологией 5G&nbsp;мы&nbsp;сможем подключить все приложения, услуги, предметы и&nbsp;устройства к&nbsp;надежным и&nbsp;безопасным беспроводным сетям и&nbsp;тем самым воплотить в&nbsp;жизнь идею &laquo;всего на&nbsp;мобильном телефоне&raquo;.
           </p>
         </div>
       </div>
@@ -72,20 +87,22 @@
     </div>
   </section>
 </section>
-<section class="mission" id="mission">
+<section class="mission">
   <div class="container">
     <div class="headings">
-      <h2 class="title">Миссия «5G»</h2>
+      <h2 class="title" id="mission">Миссия&nbsp;5G</h2>
     </div>
     <div class="mission__top mission-top">
-      <div class="mission-top__poster play" data-video="{{ 'ken-hu.mp4'|video_asset }}">
-        <img src="{{ 'ken-hu.jpg' | img_asset }}" alt="">
-        <div class="play__btn"></div>
-      </div>
-      <div class="mission-top__column">
-        <div class="mission-top__title">5G, путь к миру без границ</div>
-        <p class="mission-top__text text text--color-gray">Сегодняшние новые технологии, обуждают нас мечтать о гораздо более умном и полностью связанном будущем мире. Мечты о лучшем будущем открывают беспрецедентные возможности для мобильной индустрии. Технологические инновации, особенно инновации 5G, ускоряют наши темпы в сторону лучшего мира. Широко предполагается, что ближайшее будущее в конечном итоге станет свидетельством материализации новых впечатлений и приложений, таких как беспилотный автомобиль, удаленная хирургия, виртуальная реальность и виртуальные развлечения на базе VR.</p>
-        <p class="mission-top__text text">В основной речи на Mobile World Congress 2015 в Барселоне Кен Ху, генеральный директор Huawei Rotating, поделился своим мнением: Что такое 5G? И зачем нам нужно 5G?</p>
+      <div class="mission-top__item">
+        <div class="mission-top__poster play" data-video="{{ 'ken-hu.mp4'|video_asset }}">
+          <img src="{{ 'ken-hu.jpg' | img_asset }}" alt="">
+          <div class="play__btn"></div>
+        </div>
+        <div class="mission-top__column">
+          <div class="mission-top__title">5G&nbsp;&mdash; путь к&nbsp;миру без границ</div>
+          <p class="mission-top__text text text--color-gray">Инновационные технологии, такие как иммерсивные аудио- и&nbsp;видеоприложения, интернет вещей и&nbsp;массовое внедрение киберфизических систем в&nbsp;производство (индустрия 4.0), побуждают нас мечтать о&nbsp;гораздо более умном мире будущего, мире коммуникаций без границ. И&nbsp;эти мечты о&nbsp;лучшем будущем открывают беспрецедентные возможности для мобильной индустрии.</p>
+          <p class="mission-top__text text">Технологические инновации, особенно&nbsp;5G, ускоряют наш темп развития. Совсем скоро в&nbsp;нашу жизнь войдут беспилотные автомобили, удаленная хирургия, виртуальная реальность и&nbsp;захватывающие развлечения на&nbsp;ее&nbsp;основе.</p>
+        </div>
       </div>
     </div>
     <div class="mission__down mission-down">
@@ -101,9 +118,9 @@
     </div>
   </div>
 </section>
-<section class="innovations" id="innovations">
+<section class="innovations">
   <div class="headings">
-    <h2 class="title">Практика и инновации</h2>
+    <h2 class="title" id="innovations">Практика и инновации</h2>
   </div>
   <div class="innovations__wrapper">
     <div class="container">
@@ -125,16 +142,16 @@
 	<section class="abilities">
 		<div class="abilities__content">
 			<div class="abilities__header">
-				<h3 class="abilities__title">Мир возможностей с&nbsp;5G-проектами Huawei</h3>
-				<a href="#" class="abilities__btn">Загрузить PDF</a>
+				<h3 class="abilities__title">Мир возможностей с&nbsp;технологией&nbsp;5G</h3>
+				<a href="{{ 'world-of-opportunities.pdf'|materials_asset }}" target="_blank" class="abilities__btn">Загрузить PDF</a>
 			</div>
 			<div class="abilities__row">
 				<div class="abilities__list">
 					{% for item in common.data.abilities %}
 					{% if item.active %}
-					<a href="{{ item.id }}" class="abilities__name abilities__name--desktop abilities__name--active">{{ item.name }}</a>
+					<a href="{{ item.id }}" class="abilities__name abilities__name--desktop abilities__name--active">{{ item.title }}<span></span></a>
 					{% else %}
-					<a href="{{ item.id }}" class="abilities__name abilities__name--desktop">{{ item.name }}</a>
+					<a href="{{ item.id }}" class="abilities__name abilities__name--desktop">{{ item.title }}<span></span></a>
 					{% endif %}
 					{% endfor %}
 				</div>
@@ -144,10 +161,12 @@
           {% else %}
 					<div class="abilities__info" data-id="{{ item.id }}">
             {% endif %}
-            <a href="{{ item.id }}" class="abilities__name abilities__name--mobile">{{ item.name }}</a>
+            <a href="{{ item.id }}" class="abilities__name abilities__name--mobile">{{ item.title }}<span></span></a>
             <div class="abilities__info-inner" data-id="{{ item.id }}">
               <h3 class="abilities__info-title">{{ item.title }}</h3>
-              <p class="abilities__text text text--color-gray">{{ item.text }}</p>
+              {% for text in item.text %}
+              <p class="abilities__text text text--color-gray">{{ text }}</p>
+              {% endfor %}
             </div>
           </div>
 				{% endfor %}
@@ -155,11 +174,11 @@
 		</div>
 	</section>
 </div>
-<section class="contribution" id="contribution">
+<section class="contribution">
   <div class="container">
     <div class="headings">
-      <h2 class="title">Вклад Huawei в&nbsp;индустрию</h2>
-      <p class="text">Вклад и&nbsp;большие усилия Huawei были признаны всей технологичной отраслью. И&nbsp;в&nbsp;каждый год Huawei удостоилась отдельной награды.</p>
+      <h2 class="title" id="contribution">Вклад Huawei в&nbsp;индустрию</h2>
+      <p class="text">Вклад Huawei в&nbsp;развитие 5G&nbsp;неоднократно был признан индустрией.</p>
     </div>
     <div class="contribution__row">
       {% for item in common.data.contribution %}
@@ -175,12 +194,13 @@
     </div>
   </div>
 </section>
-<section class="info" id="info">
+<section class="info">
   <div class="container">
   	<div class="info__about about-techs">
     	<div class="about-techs__col">
-    		<p class="about-techs__text">Ключевые технологии, лежащие в&nbsp;основе цифровизации, включают программные устройства, большие данные, облачные вычисления, технологию блочной цепи, сетевую безопасность, латенсибилизирующие сети, виртуальную реальность (VR) и&nbsp;дополненную реальность (AR). Коммуникационные сети являются ключом к&nbsp;подключению всего.</p>
-    		<p class="about-techs__text">Мобильные сети стали основой процессов, что позволяет осуществлять цифровую трансформацию во&nbsp;всех отраслях.</p>
+        <h3 class="about-techs__title">Будущее 5G</h3>
+    		<p class="about-techs__text">В&nbsp;основе цифровизации лежит целый перечень ключевых технологий, среди которых программно-определяемые устройства, большие данные, облачные вычисления, технология блокчейн, безопасность сетей, виртуальная и&nbsp;дополненная реальность. И&nbsp;коммуникационные сети&nbsp;&mdash; ключ к&nbsp;объединению всех этих технологий.</p>
+    		<p class="about-techs__text">Мобильные сети стали основой производительности. Это поможет нам осуществить цифровую трансформацию во&nbsp;всех отраслях.</p>
     	</div>
     	<div class="about-techs__col">
   			<img src="{{ 'peter-zhou.jpg'|img_asset }}" class="about-techs__img">
@@ -189,7 +209,7 @@
     	</div>
     </div>
     <div class="headings">
-      <h2 class="title">Информация</h2>
+      <h2 class="title" id="info">Информация</h2>
     </div>
   </div>
   <div class="info__wrapper">
@@ -209,16 +229,30 @@
       </section>
       <section class="info__download">
         <div class="headings">
-          <h3 class="info__title">Документы для загрузки</h3>
+          <h3 class="info__title">Презентации и&nbsp;исследования</h3>
         </div>
         <div class="info__list">
           {% for item in common.data.download %}
           <div class="info__item info-item">
-            <a href="{{ item.url }}" class="">
+            <a href="{{ item.url }}" target="_blank" class="">
               <p class="info-item__name">{{ item.name }}</p>
             </a>
           </div>
           {% endfor %}
+        </div>
+        <div class="ictclub">
+          <div class="ictclub__hero" style="background-image: url(images/ictclb.jpg?rev=5a30b743cb)">
+            <div class="ictclub__hero-inner">
+              <h2 class="ictclub__hero-title">Если у&nbsp;вас есть вопрос по&nbsp;технологии 5G&nbsp;&mdash; Задайте его профессионалам!</h2>
+              <p class="ictclub__hero-text text">ИКТ-клуб открывает новые пути развития! Присоединяйтесь к&nbsp;сообществу профессионалов, работающих с&nbsp;технологиями Huawei</p>
+            </div>
+            <div class="ictclub__hero-logo">
+              <img src="images/ICT.png?rev=5a30b743cb" alt="">
+            </div>
+          </div>
+          <a href="http://forum.huawei.com/enterprise/ru/forum.php?mod=forumdisplay&action=list&fid=100101&filter=typeid&typeid=2395" target="_blank" class="ictclub__link">
+            <span>Перейти на&nbsp;форум</span>
+          </a>
         </div>
       </section>
     </div>
@@ -228,6 +262,7 @@
   <div class="popup__wrapper">
     <video class="popup__video" controls controlsList="nodownload"></video>
     <span class="popup__close"></span>
+    <div class="popup__loader"></div>
   </div>
 </div>
 {% endblock %} {% block footer_section %} {#- Include something before /body -#} {% endblock footer_section %}

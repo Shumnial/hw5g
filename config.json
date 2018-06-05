@@ -22,8 +22,8 @@
 			"route": "/",
 			"pageData": ["index"],
 			"pageVars": {
-				"title": "Главная страница",
-				"description": "Описание страницы",
+				"title": "Huawei 5G",
+				"description": "5G. Путь к миру без границ",
 				"og": true
 			}
 		}

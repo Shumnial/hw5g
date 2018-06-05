@@ -17,7 +17,12 @@
 		margin-bottom: 60px;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: @screen-md) {
+		
+	}
+
+	@media (max-width: @screen-sm) {
+
 		&__row {
 			flex-direction: column;
 		}
@@ -69,33 +74,47 @@
 		}
 	}
 
+	@media (max-width: @screen-md) {
+
+		&__title {
+			font-size: 15px;
+		}
+
+		&__descr {
+			font-size: 14px;
+		}
+	}
+
 	@media (max-width: @screen-sm) {
 		flex-basis: auto;
 		width: 50%;
 		margin: 0 auto;
 		margin-bottom: 30px;
-		box-shadow: 0 0 0 1px @red;
+		
 
 		&__img {
 			width: 100%;
 		}
 
 		&__year {
-			padding: 10px;
-			margin-bottom: 0;
+			margin-bottom: 5px;
 		}
 
 		&__title {
-			padding-left: 70px;
-			padding-right: 10px;
-
+			padding-left: 45px;
 			&::before {
-				left: 10px;
+				width: 38px;
+				height: 40px;
+				background-size: 38px 40px;
 			}
 		}
 
 		&__descr {
-			padding: 0 10px
+			
 		}
+	}
+
+	@media (max-width: @screen-xs) {
+		width: 100%;
 	}
 }

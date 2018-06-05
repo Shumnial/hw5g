@@ -467,3 +467,25 @@ template {
 [hidden] {
   display: none !important;
 }
+
+main {
+  background-image: url('../images/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 120%;
+
+  @media (max-width: @screen-lg) {
+    background-size: 180%;
+  }
+
+  @media (max-width: @screen-md) {
+    background-size: 220%;
+  }
+
+  @media (max-width: @screen-sm) {
+    background-size: 300%;
+  }
+
+  @media (max-width: 600px) {
+    background-size: 600%;
+  }
+}

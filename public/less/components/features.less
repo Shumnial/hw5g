@@ -14,7 +14,8 @@
 		position: relative;
 
 		&--left {
-
+			margin-right: auto;
+			
 			.features__item {
 				&:nth-child(odd) {
 					transform: translateX(90px);
@@ -33,6 +34,7 @@
 	}
 
 	&__img {
+		flex: 0 0 auto;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -43,8 +45,9 @@
 
 	@media (max-width: 1110px) {
 		&__wrapper {
-			flex-direction: column;
+			flex-wrap: wrap;
 			align-items: center;
+			justify-content: space-around;
 			text-align: center;
 		}
 
@@ -54,6 +57,19 @@
 
 		.features__item:nth-child(1n) {
 			transform: none;
+		}
+	}
+
+	@media (max-width: 530px) {
+
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__col {
+			&--left {
+				margin-right: 0;
+			}
 		}
 	}
 }
@@ -69,6 +85,17 @@
 			font-weight: 700;
 			color: @blue;
 			margin-bottom: 0;
+		}
+	}
+
+	@media (max-width: @screen-sm) {
+
+		&__descr {
+			font-size: 15px;
+
+			&--bold {
+				font-size: 40px;
+			}
 		}
 	}
 }

@@ -48,8 +48,20 @@
 	left: 10px;
 	transform: rotate(-135deg);
 
+	@media (max-width: 1200px) {
+		top: 35px;
+	}
+
+	@media (max-width: 1020px) {
+		top: 50px;
+	}
+
+	@media (max-width: @screen-md) {
+		top: 30px;
+	}
+
 	@media (max-width: @screen-sm) {
-		top: 0;
+		top: -45px;
 		bottom: 0;
 		margin: auto;
 	}
@@ -61,8 +73,20 @@
 	right: 40px;
 	transform: rotate(45deg);
 
+	@media (max-width: 1200px) {
+		top: 35px;
+	}
+
+	@media (max-width: 1020px) {
+		top: 50px;
+	}
+
+	@media (max-width: @screen-md) {
+		top: 30px;
+	}
+
 	@media (max-width: @screen-sm) {
-		top: 0;
+		top: -45px;
 		bottom: 0;
 		margin: auto;
 	}
@@ -76,17 +100,20 @@
 	padding-top: 20px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	padding-right: 25px;
+	@media (max-width: @screen-sm) {
+		padding-right: 0;
+	}
 
 	li button {
 		font-size: 0;
-		width: 13px;
-		height: 13px;
+		width: 8px;
+		height: 10px;
 		background-color: #959595;
 		border: 0;
 		margin-right: 10px;
 		border-radius: 50%;
-		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
 		cursor: pointer;
 
 		&:focus {
@@ -96,11 +123,16 @@
 		&:hover {
 			background-color: @red;
 		}
+
+		@media (max-width: @screen-sm) {
+			margin-right: 5px;
+		}
 	}
 
 	.slick-active {
 		button {
-		background-color: #fff;
+			background-color: #fff;
+			box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
 		}
 	}
 }

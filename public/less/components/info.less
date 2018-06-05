@@ -24,6 +24,22 @@
 			display: block;
 		}
 	}
+
+	@media (max-width: @screen-sm) {
+		&__title {
+			font-size: 30px;
+		}
+
+		&__videos {
+			margin-bottom: 60px;
+		}
+	}
+
+	@media (max-width: @screen-xs) {
+		&__title {
+			font-size: 26px;
+		}
+	}
 }
 
 .info-item {
@@ -74,6 +90,11 @@
 		}
 	}
 
+	&__title {
+		font-size: 30px;
+		font-weight: 400;
+	}
+
 	&__text {
 		font-size: 20px;
 	}
@@ -95,11 +116,29 @@
 		}
 
 		&__col:nth-child(1) {
+			margin-right: 0;
 			margin-bottom: 30px;
+		}
+
+		&__title {
+			font-size: 26px;
 		}
 
 		&__text, &__name, &__post {
 			font-size: 17px;
+		}
+	}
+
+	@media (max-width: @screen-xs) {
+		padding: 20px;
+
+		&__title {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		&__text, &__name, &__post {
+			font-size: 14px;
 		}
 	}
 }
